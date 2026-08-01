@@ -1,0 +1,37 @@
+cell_id,category,channel,model_name,validation_wape,validation_rmse
+Beauty | Affiliate,Beauty,Affiliate,linear,0.19301083264430355,19848.384008461544
+Beauty | Affiliate,Beauty,Affiliate,log,0.05993644448497272,7354.801422801339
+Beauty | Affiliate,Beauty,Affiliate,saturation,0.05665582219430617,7038.848979862899
+Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,linear,0.14548142523683477,22730.23897025389
+Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,log,0.05691929846089015,9640.216806897437
+Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,saturation,0.057201834612157394,9782.522013817117
+Beauty | Paid Search,Beauty,Paid Search,linear,0.1615850334769188,19197.039577601387
+Beauty | Paid Search,Beauty,Paid Search,log,0.026959734430588717,3936.615947491966
+Beauty | Paid Search,Beauty,Paid Search,saturation,0.026750282628300526,3788.1678262662113
+Electronics | Affiliate,Electronics,Affiliate,linear,0.17748765601706643,28770.88861701073
+Electronics | Affiliate,Electronics,Affiliate,log,0.06743738078922139,12877.892695138386
+Electronics | Affiliate,Electronics,Affiliate,saturation,0.06594303852923762,12547.162482200927
+Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,linear,0.18924847900741112,24714.581306958742
+Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,log,0.07410717297923083,10869.789285966666
+Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,saturation,0.07297856929213882,10826.937341688084
+Electronics | Paid Search,Electronics,Paid Search,linear,0.14137241313131813,23924.116885776082
+Electronics | Paid Search,Electronics,Paid Search,log,0.06936332345570738,11590.35942321666
+Electronics | Paid Search,Electronics,Paid Search,saturation,0.06800504379782189,11664.99699710488
+Grocery | Affiliate,Grocery,Affiliate,linear,0.1826238465605943,26738.867834213917
+Grocery | Affiliate,Grocery,Affiliate,log,0.08732250362208854,14420.80853961679
+Grocery | Affiliate,Grocery,Affiliate,saturation,0.08998477761357213,14738.410743805498
+Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,linear,0.16881503780616994,34223.7819361214
+Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,log,0.037022973932324545,7854.020850735541
+Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,saturation,0.03921438313722157,8187.592654167558
+Grocery | Paid Search,Grocery,Paid Search,linear,0.15782351638343325,28182.750344160115
+Grocery | Paid Search,Grocery,Paid Search,log,0.05517351697047899,10807.444477210453
+Grocery | Paid Search,Grocery,Paid Search,saturation,0.053953569700926546,10475.674301464454
+Home | Affiliate,Home,Affiliate,linear,0.10592897991872656,20578.07131130005
+Home | Affiliate,Home,Affiliate,log,0.08157523769253608,16486.507602916492
+Home | Affiliate,Home,Affiliate,saturation,0.08137412781122168,16593.683583870272
+Home | Lifecycle CRM,Home,Lifecycle CRM,linear,0.14035634450034784,19308.19587391397
+Home | Lifecycle CRM,Home,Lifecycle CRM,log,0.03927394662048157,5928.77561301327
+Home | Lifecycle CRM,Home,Lifecycle CRM,saturation,0.03805337109024645,5759.442155951112
+Home | Paid Search,Home,Paid Search,linear,0.1782138187118093,41108.977378262054
+Home | Paid Search,Home,Paid Search,log,0.08968198891404847,21116.427689065265
+Home | Paid Search,Home,Paid Search,saturation,0.08951241072040289,21295.86430547479

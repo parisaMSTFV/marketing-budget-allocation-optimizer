@@ -1,0 +1,83 @@
+{
+  "base_policy_results": {
+    "Equal": {
+      "allocation_turnover": 0.11491867768902785,
+      "budget": 1200000.0,
+      "incremental_contribution_roi": 1.5280218018459524,
+      "incremental_profit_roi": 0.5280218018459525,
+      "regret_vs_oracle": 0.010788385205290425,
+      "scenario": "Base",
+      "true_incremental_contribution": 1833626.162215143,
+      "true_incremental_profit": 633626.162215143
+    },
+    "Historical": {
+      "allocation_turnover": 0.0,
+      "budget": 1200000.0,
+      "incremental_contribution_roi": 1.4905314859567969,
+      "incremental_profit_roi": 0.49053148595679685,
+      "regret_vs_oracle": 0.035058887023440656,
+      "scenario": "Base",
+      "true_incremental_contribution": 1788637.7831481562,
+      "true_incremental_profit": 588637.7831481562
+    },
+    "Optimized": {
+      "allocation_turnover": 0.19339003471918678,
+      "budget": 1199999.9999999998,
+      "incremental_contribution_roi": 1.5403228141146623,
+      "incremental_profit_roi": 0.5403228141146624,
+      "regret_vs_oracle": 0.0028249489537659806,
+      "scenario": "Base",
+      "true_incremental_contribution": 1848387.3769375945,
+      "true_incremental_profit": 648387.3769375947
+    },
+    "Oracle": {
+      "allocation_turnover": 0.18030383751866738,
+      "budget": 1199999.9999999998,
+      "incremental_contribution_roi": 1.5446864745548525,
+      "incremental_profit_roi": 0.5446864745548525,
+      "regret_vs_oracle": 0.0,
+      "scenario": "Base",
+      "true_incremental_contribution": 1853623.7694658227,
+      "true_incremental_profit": 653623.769465823
+    }
+  },
+  "config": {
+    "n_weeks": 104,
+    "rules": {
+      "maximum_category_share": 0.35,
+      "maximum_cell_multiple": 2.2,
+      "maximum_channel_share": 0.48,
+      "minimum_category_share": 0.15,
+      "minimum_cell_multiple": 0.4,
+      "minimum_channel_share": 0.12,
+      "piecewise_segments": 24,
+      "total_budget": 1200000.0
+    },
+    "seed": 42,
+    "test_weeks": 20,
+    "validation_weeks": 16
+  },
+  "decision_cells": 12,
+  "history_weeks": 68,
+  "mean_holdout_wape": 0.05860146633461749,
+  "median_holdout_wape": 0.05816316152995196,
+  "observations": 1248,
+  "seed": 42,
+  "selected_models": {
+    "Beauty | Affiliate": "saturation",
+    "Beauty | Lifecycle CRM": "log",
+    "Beauty | Paid Search": "saturation",
+    "Electronics | Affiliate": "saturation",
+    "Electronics | Lifecycle CRM": "saturation",
+    "Electronics | Paid Search": "saturation",
+    "Grocery | Affiliate": "log",
+    "Grocery | Lifecycle CRM": "log",
+    "Grocery | Paid Search": "saturation",
+    "Home | Affiliate": "saturation",
+    "Home | Lifecycle CRM": "saturation",
+    "Home | Paid Search": "saturation"
+  },
+  "test_weeks": 20,
+  "total_weeks": 104,
+  "validation_weeks": 16
+}
