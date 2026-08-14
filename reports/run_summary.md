@@ -1,5 +1,6 @@
 # Reproducible Run Summary
 
+- Data mode: `synthetic_simulation`
 - Seed: `42`
 - Weekly observations: 1,248
 - Decision cells: 12

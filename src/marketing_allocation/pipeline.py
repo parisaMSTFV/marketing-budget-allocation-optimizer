@@ -14,8 +14,14 @@ from marketing_allocation.curves import (
     evaluate_on_holdout,
     fit_response_curves,
 )
-from marketing_allocation.evaluation import add_oracle_regret, evaluate_allocation
+from marketing_allocation.evaluation import (
+    add_oracle_regret,
+    evaluate_allocation,
+    evaluate_modeled_allocation,
+)
+from marketing_allocation.input_data import evidence_status, load_weekly_response
 from marketing_allocation.optimization import (
+    ScenarioPlan,
     default_scenarios,
     optimize_budget,
     planning_cells,
@@ -76,8 +82,9 @@ def _truth_models(
 def run_pipeline(
     project_root: str | Path,
     config: ProjectConfig | None = None,
+    input_weekly_response: str | Path | None = None,
 ) -> dict[str, object]:
-    """Run the complete reproducible case study."""
+    """Run the synthetic case study or an experiment-informed aggregate input."""
 
     config = config or ProjectConfig()
     project_root = Path(project_root)
@@ -88,11 +95,27 @@ def run_pipeline(
     for directory in (generated_dir, sample_dir, reports_dir, figures_dir):
         directory.mkdir(parents=True, exist_ok=True)
 
-    portfolio = generate_portfolio(seed=config.seed, n_weeks=config.n_weeks)
-    observations = portfolio.observations
+    portfolio = None
+    if input_weekly_response is None:
+        portfolio = generate_portfolio(seed=config.seed, n_weeks=config.n_weeks)
+        observations = portfolio.observations
+        data_mode = "synthetic_simulation"
+    else:
+        observations = load_weekly_response(
+            input_weekly_response,
+            validation_weeks=config.validation_weeks,
+            test_weeks=config.test_weeks,
+        )
+        data_mode = "experiment_informed_input"
     observations.to_csv(generated_dir / "weekly_observations.csv", index=False)
-    portfolio.ground_truth.to_csv(generated_dir / "simulation_truth.csv", index=False)
-    observations.head(36).to_csv(sample_dir / "synthetic_weekly_sample.csv", index=False)
+    truth_path = generated_dir / "simulation_truth.csv"
+    if portfolio is not None:
+        portfolio.ground_truth.to_csv(truth_path, index=False)
+        observations.head(36).to_csv(
+            sample_dir / "synthetic_weekly_sample.csv", index=False
+        )
+    else:
+        truth_path.unlink(missing_ok=True)
 
     history, holdout = split_history_holdout(observations, config.test_weeks)
     models, model_comparison = fit_response_curves(
@@ -100,9 +123,13 @@ def run_pipeline(
         validation_weeks=config.validation_weeks,
     )
     _, holdout_metrics = evaluate_on_holdout(models, holdout)
-    truth_models = _truth_models(
-        portfolio.ground_truth,
-        training_end=pd.Timestamp(history["week_start"].max()),
+    truth_models = (
+        _truth_models(
+            portfolio.ground_truth,
+            training_end=pd.Timestamp(history["week_start"].max()),
+        )
+        if portfolio is not None
+        else None
     )
 
     recent_weeks = sorted(history["week_start"].unique())[-12:]
@@ -113,7 +140,21 @@ def run_pipeline(
 
     allocation_rows: list[pd.DataFrame] = []
     evaluation_rows: list[dict[str, object]] = []
-    for scenario in default_scenarios(config.rules):
+    scenarios = (
+        default_scenarios(config.rules)
+        if portfolio is not None
+        else (
+            ScenarioPlan(
+                name="Base",
+                budget=config.rules.total_budget,
+                category_context={
+                    str(category): 1.0
+                    for category in sorted(cells["category"].unique())
+                },
+            ),
+        )
+    )
+    for scenario in scenarios:
         historical = project_target_allocation(
             cells,
             cells["historical_spend"].to_numpy(),
@@ -127,29 +168,38 @@ def run_pipeline(
             config.rules,
         )
         optimized = optimize_budget(models, cells, scenario, config.rules)
-        oracle = optimize_budget(
-            truth_models,
-            cells,
-            without_risk_penalty(scenario),
-            config.rules,
-        )
-
         policies = {
             "Historical": historical.allocation,
             "Equal": equal.allocation,
             "Optimized": optimized.allocation,
-            "Oracle": oracle.allocation,
         }
+        if truth_models is not None:
+            oracle = optimize_budget(
+                truth_models,
+                cells,
+                without_risk_penalty(scenario),
+                config.rules,
+            )
+            policies["Oracle"] = oracle.allocation
         for policy_name, allocation in policies.items():
             output = allocation.copy()
             output.insert(0, "policy", policy_name)
             output.insert(0, "scenario", scenario.name)
             allocation_rows.append(output)
-            metrics = evaluate_allocation(
-                allocation,
-                truth_models,
-                scenario,
-                historical.allocation,
+            metrics = (
+                evaluate_allocation(
+                    allocation,
+                    truth_models,
+                    scenario,
+                    historical.allocation,
+                )
+                if truth_models is not None
+                else evaluate_modeled_allocation(
+                    allocation,
+                    models,
+                    scenario,
+                    historical.allocation,
+                )
             )
             evaluation_rows.append(
                 {
@@ -160,7 +210,9 @@ def run_pipeline(
             )
 
     allocations = pd.concat(allocation_rows, ignore_index=True)
-    scenario_comparison = add_oracle_regret(pd.DataFrame(evaluation_rows))
+    scenario_comparison = pd.DataFrame(evaluation_rows)
+    if truth_models is not None:
+        scenario_comparison = add_oracle_regret(scenario_comparison)
     recommended = allocations.loc[
         (allocations["scenario"] == "Base") & (allocations["policy"] == "Optimized")
     ].copy()
@@ -181,7 +233,12 @@ def run_pipeline(
     scenario_comparison.to_csv(reports_dir / "scenario_comparison.csv", index=False)
     recommended.to_csv(reports_dir / "recommended_allocation.csv", index=False)
 
-    plot_response_curves(history, models, figures_dir / "response_curves.png")
+    plot_response_curves(
+        history,
+        models,
+        figures_dir / "response_curves.png",
+        synthetic_mode=portfolio is not None,
+    )
     plot_holdout_quality(holdout_metrics, figures_dir / "holdout_quality.png")
     plot_allocation_heatmaps(allocations, figures_dir / "allocation_heatmap.png")
     plot_scenario_comparison(
@@ -195,10 +252,11 @@ def run_pipeline(
         .to_dict(orient="index")
     )
     summary: dict[str, object] = {
-        "seed": config.seed,
+        "data_mode": data_mode,
+        "seed": config.seed if portfolio is not None else None,
         "observations": len(observations),
         "decision_cells": observations["cell_id"].nunique(),
-        "total_weeks": config.n_weeks,
+        "total_weeks": observations["week_start"].nunique(),
         "history_weeks": history["week_start"].nunique() - config.validation_weeks,
         "validation_weeks": config.validation_weeks,
         "test_weeks": holdout["week_start"].nunique(),
@@ -210,6 +268,17 @@ def run_pipeline(
         "base_policy_results": base_policy_results,
         "config": asdict(config),
     }
+    if portfolio is None:
+        summary.update(
+            {
+                "input_file": Path(input_weekly_response).name,
+                "evidence_types": sorted(observations["evidence_type"].unique()),
+                "evidence_references": sorted(
+                    observations["evidence_reference"].unique()
+                ),
+                "evidence_status": evidence_status(observations),
+            }
+        )
     write_json(reports_dir / "run_metrics.json", summary)
     write_run_summary(reports_dir / "run_summary.md", summary)
     write_decision_note(

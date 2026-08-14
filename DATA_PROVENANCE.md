@@ -19,6 +19,18 @@ internal thresholds, proprietary code, or confidential business results were
 used. The row-level generated files are excluded from version control; a small
 sample is committed only to make the schema easy to inspect.
 
+`data/sample/weekly_response_fixture.csv` is also generated from the same public
+simulator. It contains 36 complete weeks and explicit `synthetic_fixture`
+provenance only to exercise the external-input contract in tests and CI. It must
+not be described as experimental or company evidence.
+
+Users may supply their own aggregate file through `--input-weekly-response`.
+That file remains under the ignored `data/generated/` path after validation.
+The required evidence type and reference, accepted identification designs, grain,
+units, and temporal requirements are defined in
+[`docs/weekly_response_contract.md`](docs/weekly_response_contract.md). The
+repository does not convert platform attribution into incremental evidence.
+
 The simulator's hidden response parameters are used only to evaluate policy
 regret and create an oracle upper bound. A real planning team would not know
 those parameters.

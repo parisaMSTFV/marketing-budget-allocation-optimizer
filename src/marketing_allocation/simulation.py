@@ -1,4 +1,4 @@
-"""Generate experiment-informed, public-safe synthetic allocation evidence."""
+"""Generate experiment-informed synthetic allocation evidence."""
 
 from __future__ import annotations
 

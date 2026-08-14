@@ -1,0 +1,433 @@
+week_start,cell_id,category,channel,spend,context_index,measured_incremental_contribution,evidence_type,evidence_reference
+2024-01-01,Beauty | Affiliate,Beauty,Affiliate,97818.62345914,1.00000000,101161.08577223,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-01,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,48722.18906368,1.04349655,113412.77608735,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-01,Beauty | Paid Search,Beauty,Paid Search,67931.06536066,1.07833269,97414.19152725,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-01,Electronics | Affiliate,Electronics,Affiliate,76808.31675711,1.09757234,177412.33708306,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-01,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,129647.97710948,1.09738476,115890.45843781,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-01,Electronics | Paid Search,Electronics,Paid Search,57637.56143401,1.07780732,133206.05289012,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-01,Grocery | Affiliate,Grocery,Affiliate,128415.32904457,1.04273799,150039.26735660,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-01,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,63871.49149281,0.99915928,177228.19528684,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-01,Grocery | Paid Search,Grocery,Paid Search,104911.25361874,0.95574796,136976.84839723,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-01,Home | Affiliate,Home,Affiliate,55453.54469618,0.92114747,148712.50977170,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-01,Home | Lifecycle CRM,Home,Lifecycle CRM,69216.65969942,0.90224699,85399.71296505,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-01,Home | Paid Search,Home,Paid Search,71980.43210471,0.90280969,165306.34962093,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-08,Beauty | Affiliate,Beauty,Affiliate,114989.57132279,1.02393157,100571.26216565,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-08,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,74297.73434375,1.06378173,156849.74302382,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-08,Beauty | Paid Search,Beauty,Paid Search,101710.82480894,1.09093259,130550.52128173,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-08,Electronics | Affiliate,Electronics,Affiliate,48318.87371305,1.09997823,147215.08517400,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-08,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,126773.97386374,1.08911764,126451.52588780,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-08,Electronics | Paid Search,Electronics,Paid Search,36707.97698501,1.06051320,95639.61563124,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-08,Grocery | Affiliate,Grocery,Affiliate,76768.29988773,1.01986024,109908.51888646,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-08,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,57812.48425966,0.97525298,179207.93083144,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-08,Grocery | Paid Search,Grocery,Paid Search,79711.14154720,0.93557301,143366.10323788,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-08,Home | Affiliate,Home,Affiliate,72782.03184576,0.90872082,169502.70830638,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-08,Home | Lifecycle CRM,Home,Lifecycle CRM,143727.49493522,0.90004284,126403.72421971,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-08,Home | Paid Search,Home,Paid Search,103122.44805548,0.91126691,206675.66870213,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-15,Beauty | Affiliate,Beauty,Affiliate,66697.94134285,1.04647232,84081.94479036,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-15,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,63234.38833021,1.08036015,139359.29601016,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-15,Beauty | Paid Search,Beauty,Paid Search,69615.89901617,1.09824781,94240.94730859,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-15,Electronics | Affiliate,Electronics,Affiliate,74450.94089521,1.09657376,159124.40534908,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-15,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,156691.56178976,1.07567132,126404.91879886,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-15,Electronics | Paid Search,Electronics,Paid Search,102777.46533040,1.03970228,158289.88125810,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-15,Grocery | Affiliate,Grocery,Affiliate,95073.33851658,0.99582828,139510.07524130,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-15,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,92639.81036007,0.95278490,177478.02451574,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-15,Grocery | Paid Search,Grocery,Paid Search,109642.64562787,0.91914232,129638.09623590,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-15,Home | Affiliate,Home,Affiliate,70221.62107331,0.90159897,131628.98646646,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-15,Home | Lifecycle CRM,Home,Lifecycle CRM,181463.82983694,0.90364784,134342.44425269,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-15,Home | Paid Search,Home,Paid Search,114956.86454479,0.92488098,231139.08255160,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-22,Beauty | Affiliate,Beauty,Affiliate,36173.72794316,1.06631227,74311.91318470,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-22,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,93526.88640183,1.09226833,177256.28719840,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-22,Beauty | Paid Search,Beauty,Paid Search,123414.06377931,1.09985323,135991.34876954,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-22,Electronics | Affiliate,Electronics,Affiliate,33246.54966361,1.08755677,113110.73481233,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-22,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,91384.37524269,1.05782726,92755.68056778,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-22,Electronics | Paid Search,Electronics,Paid Search,49910.19457110,1.01658400,115619.42989967,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-22,Grocery | Affiliate,Grocery,Affiliate,76668.03106575,0.97203877,104608.94389320,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-22,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,98987.47065974,0.93306079,183843.33808693,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-22,Grocery | Paid Search,Grocery,Paid Search,125316.70511295,0.90741079,147456.71803202,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-22,Home | Affiliate,Home,Affiliate,90193.33247740,0.90019584,164650.65226392,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-22,Home | Lifecycle CRM,Home,Lifecycle CRM,129844.15024503,0.91285247,111466.75379083,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-22,Home | Paid Search,Home,Paid Search,128814.78676037,0.94286069,217174.19815278,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-29,Beauty | Affiliate,Beauty,Affiliate,122431.58647601,1.08229839,110302.54527434,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-29,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,96667.32742014,1.09881420,171618.64353325,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-29,Beauty | Paid Search,Beauty,Paid Search,121767.17778038,1.09565554,134782.11605671,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-29,Electronics | Affiliate,Electronics,Affiliate,81136.88517015,1.07345130,171991.81818170,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-29,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,106900.10594285,1.03662248,127310.08754524,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-29,Electronics | Paid Search,Electronics,Paid Search,62639.19031281,0.99250192,127232.92398055,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-29,Grocery | Affiliate,Grocery,Affiliate,120262.38074118,0.94987427,139589.61314407,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-29,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,97996.36365818,0.91722694,192297.20675831,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-29,Grocery | Paid Search,Grocery,Paid Search,159194.10753695,0.90106020,143820.60280681,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-29,Home | Affiliate,Home,Affiliate,81962.83662591,0.90459296,154226.48965771,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-29,Home | Lifecycle CRM,Home,Lifecycle CRM,139847.62326556,0.92712181,122358.57131300,synthetic_fixture,public-safe-schema-fixture-v1
+2024-01-29,Home | Paid Search,Home,Paid Search,147538.69437960,0.96416113,254491.17812551,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-05,Beauty | Affiliate,Beauty,Affiliate,69799.61458959,1.09350162,98158.24263161,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-05,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,83951.39740949,1.09961736,148748.51952411,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-05,Beauty | Paid Search,Beauty,Paid Search,59474.08643275,1.08589870,88891.88543603,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-05,Electronics | Affiliate,Electronics,Affiliate,32388.77555467,1.05507711,103416.78657129,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-05,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,52837.31592250,1.01328935,92800.66394351,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-05,Electronics | Paid Search,Electronics,Paid Search,79581.08686560,0.96885560,132853.77593380,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-05,Grocery | Affiliate,Grocery,Affiliate,89437.87509183,0.93062289,122335.37245027,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-05,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,107243.36012497,0.90620356,198614.20996112,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-05,Grocery | Paid Search,Grocery,Paid Search,72610.52791707,0.90045964,102056.42295602,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-05,Home | Affiliate,Home,Affiliate,64712.09561338,0.91453479,160641.46502821,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-05,Home | Lifecycle CRM,Home,Lifecycle CRM,168107.75945762,0.94562655,135045.33060985,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-05,Home | Paid Search,Home,Paid Search,53081.36135203,0.98754439,158102.31107882,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-12,Beauty | Affiliate,Beauty,Affiliate,65256.75738275,1.09927089,87938.11433324,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-12,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,36746.31092081,1.09463111,98828.83080650,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-12,Beauty | Paid Search,Beauty,Paid Search,110205.45502676,1.07114974,120310.42128953,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-12,Electronics | Affiliate,Electronics,Affiliate,94770.19360342,1.03350203,181056.25062449,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-12,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,113950.14688460,0.98918388,101051.01773386,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-12,Electronics | Paid Search,Electronics,Paid Search,96986.71949228,0.94701928,145416.28285814,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-12,Grocery | Affiliate,Grocery,Affiliate,131165.36028687,0.91540345,122148.25560568,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-12,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,71056.13608664,0.90063128,167978.28871932,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-12,Grocery | Paid Search,Grocery,Paid Search,165791.47317309,0.90564400,146372.47720093,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-12,Home | Affiliate,Home,Affiliate,70982.68414396,0.92944355,159294.65262320,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-12,Home | Lifecycle CRM,Home,Lifecycle CRM,211659.65134474,0.96729129,130216.55962243,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-12,Home | Paid Search,Home,Paid Search,73490.02451807,1.01165153,241458.58639447,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-19,Beauty | Affiliate,Beauty,Affiliate,93894.56667208,1.09927089,112469.46931920,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-19,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,90688.09803555,1.08414525,169170.85343528,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-19,Beauty | Paid Search,Beauty,Paid Search,49192.87031463,1.05226581,86793.20907067,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-19,Electronics | Affiliate,Electronics,Affiliate,65808.77924811,1.00997994,160387.03872776,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-19,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,48152.51588471,0.96570701,72114.50293331,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-19,Electronics | Paid Search,Electronics,Paid Search,108982.72503146,0.92826201,154616.41331043,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-19,Grocery | Affiliate,Grocery,Affiliate,46200.20925258,0.90510046,79384.74842323,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-19,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,76513.60259804,0.90083396,168161.21618931,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-19,Grocery | Paid Search,Grocery,Paid Search,118646.02244866,0.91631199,122842.05426144,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-19,Home | Affiliate,Home,Affiliate,62637.01613409,0.94845279,137048.28629453,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-19,Home | Lifecycle CRM,Home,Lifecycle CRM,122140.97126905,0.99085694,133081.01914665,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-19,Home | Paid Search,Home,Paid Search,110969.27165953,1.03508152,244931.98911157,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-26,Beauty | Affiliate,Beauty,Affiliate,150191.50781966,1.23565684,134344.24978868,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-26,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,76592.28218120,1.20770917,164195.48412669,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-26,Beauty | Paid Search,Beauty,Paid Search,111489.25195947,1.16428916,141252.22290804,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-26,Electronics | Affiliate,Electronics,Affiliate,79194.92419715,1.11404197,173840.84610067,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-26,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,125590.92436828,1.06697213,118973.86070465,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-26,Electronics | Paid Search,Electronics,Paid Search,67604.60806394,1.03245150,139841.74820150,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-26,Grocery | Affiliate,Grocery,Affiliate,135592.71582819,1.01735334,121221.31607793,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-26,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,43342.34432692,1.02468378,143131.88971429,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-26,Grocery | Paid Search,Grocery,Paid Search,163621.42866892,1.05298329,177739.70868229,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-26,Home | Affiliate,Home,Affiliate,32332.38435224,1.09661728,112231.52687263,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-26,Home | Lifecycle CRM,Home,Lifecycle CRM,181048.61910974,1.14689796,159978.93082342,synthetic_fixture,public-safe-schema-fixture-v1
+2024-02-26,Home | Paid Search,Home,Paid Search,49906.28916686,1.19381416,203469.80627758,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-04,Beauty | Affiliate,Beauty,Affiliate,108753.75753773,1.22299718,115069.82733893,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-04,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,67870.14102614,1.18581803,133150.76813493,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-04,Beauty | Paid Search,Beauty,Paid Search,132224.16021221,1.13752519,138892.24310445,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-04,Electronics | Affiliate,Electronics,Affiliate,91821.11964468,1.08773404,221683.84671051,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-04,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,53438.34746503,1.04635829,84008.80446840,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-04,Electronics | Paid Search,Electronics,Paid Search,77506.76783196,1.02163608,141499.35024303,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-04,Grocery | Affiliate,Grocery,Affiliate,138787.15005197,1.01848977,145099.50870335,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-04,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,35634.10336739,1.03754578,121364.77776845,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-04,Grocery | Paid Search,Grocery,Paid Search,109706.34678949,1.07500997,136345.90895588,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-04,Home | Affiliate,Home,Affiliate,29355.96245905,1.12342299,102406.65627171,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-04,Home | Lifecycle CRM,Home,Lifecycle CRM,159426.92541286,1.17314553,150764.99599667,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-04,Home | Paid Search,Home,Paid Search,47732.59250678,1.21427755,174293.52004331,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-11,Beauty | Affiliate,Beauty,Affiliate,62778.84424081,1.06631227,88038.24356971,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-11,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,45128.53423130,1.02715305,116933.85832321,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-11,Beauty | Paid Search,Beauty,Paid Search,123405.54413573,0.98258750,115577.07807960,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-11,Electronics | Affiliate,Electronics,Affiliate,81561.30762181,0.94148889,157841.04294385,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-11,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,73241.19129203,0.91204017,76168.00858718,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-11,Electronics | Paid Search,Electronics,Paid Search,48014.45746345,0.90010477,86981.65527393,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-11,Grocery | Affiliate,Grocery,Affiliate,105238.80911673,0.90805908,97854.87660800,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-11,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,43042.38078917,0.93431937,146454.89306317,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-11,Grocery | Paid Search,Grocery,Paid Search,133682.04944314,0.97365705,161820.76067292,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-11,Home | Affiliate,Home,Affiliate,59988.66532674,1.01823976,153990.44979073,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-11,Home | Lifecycle CRM,Home,Lifecycle CRM,139969.92202073,1.05919083,164041.55869272,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-11,Home | Paid Search,Home,Paid Search,145470.17247060,1.08835667,256318.86609890,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-18,Beauty | Affiliate,Beauty,Affiliate,108625.57417610,1.04647232,109208.92034716,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-18,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,56353.80407691,1.00333158,133854.21771213,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-18,Beauty | Paid Search,Beauty,Paid Search,143909.88097429,0.95952750,119600.67243837,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-18,Electronics | Affiliate,Electronics,Affiliate,59900.98365718,0.92378174,142281.92197489,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-18,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,160374.03440159,0.90321147,124324.64011805,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-18,Electronics | Paid Search,Electronics,Paid Search,98715.39688071,0.90191236,145870.31336509,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-18,Grocery | Affiliate,Grocery,Affiliate,102829.59136275,0.92014306,118584.27693551,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-18,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,64302.78581475,0.95427375,178826.53580161,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-18,Grocery | Paid Search,Grocery,Paid Search,85656.95876124,0.99750880,131098.71317531,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-18,Home | Affiliate,Home,Affiliate,52993.32625422,1.04123986,140233.76826134,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-18,Home | Lifecycle CRM,Home,Lifecycle CRM,132591.44927136,1.07675982,131519.30867262,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-18,Home | Paid Search,Home,Paid Search,55634.21298281,1.09699646,189988.18505947,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-25,Beauty | Affiliate,Beauty,Affiliate,42457.93935441,1.02393157,70277.06689813,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-25,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,55076.49871983,0.97931649,128209.09080030,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-25,Beauty | Paid Search,Beauty,Paid Search,42331.47185961,0.93881961,70187.21716512,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-25,Electronics | Affiliate,Electronics,Affiliate,48141.62610021,0.91050411,113244.06737312,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-25,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,104414.06065119,0.90000776,99772.92056886,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-25,Electronics | Paid Search,Electronics,Paid Search,47905.17964120,0.90942044,98835.34788390,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-25,Grocery | Affiliate,Grocery,Affiliate,84224.88926073,0.93686804,101405.39240073,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-25,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,57360.77878489,0.97688557,157002.51917556,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-25,Grocery | Paid Search,Grocery,Paid Search,47834.31081985,1.02150533,105330.59617272,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-25,Home | Affiliate,Home,Affiliate,42734.70611207,1.06184324,133911.89955962,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-25,Home | Lifecycle CRM,Home,Lifecycle CRM,102369.97386538,1.08986781,125035.07845158,synthetic_fixture,public-safe-schema-fixture-v1
+2024-03-25,Home | Paid Search,Home,Paid Search,98278.63881953,1.09999918,228017.94484191,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-01,Beauty | Affiliate,Beauty,Affiliate,92004.13307231,1.00000000,93724.26571593,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-01,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,73509.32613297,0.95650345,143797.16473530,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-01,Beauty | Paid Search,Beauty,Paid Search,64440.21169611,0.92166731,79108.36294020,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-01,Electronics | Affiliate,Electronics,Affiliate,78348.89213887,0.90242766,141084.21871933,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-01,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,137973.32036008,0.90261524,98600.43263823,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-01,Electronics | Paid Search,Electronics,Paid Search,62678.62911458,0.92219268,112119.78744707,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-01,Grocery | Affiliate,Grocery,Affiliate,72896.80448669,0.95726201,98735.67498498,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-01,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,62059.12102448,1.00084072,172473.26188299,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-01,Grocery | Paid Search,Grocery,Paid Search,53116.29501000,1.04425204,99082.30813367,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-01,Home | Affiliate,Home,Affiliate,109158.88668173,1.07885253,241192.70833137,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-01,Home | Lifecycle CRM,Home,Lifecycle CRM,107615.31554051,1.09775301,125285.60408065,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-01,Home | Paid Search,Home,Paid Search,89585.64248925,1.09719031,232824.16099264,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-08,Beauty | Affiliate,Beauty,Affiliate,110580.68488151,0.97606843,101380.04142295,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-08,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,48959.01185281,0.93621827,93157.61673347,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-08,Beauty | Paid Search,Beauty,Paid Search,150048.15122624,0.90906741,119155.50272566,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-08,Electronics | Affiliate,Electronics,Affiliate,28976.06739639,0.90002177,103271.61715783,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-08,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,150946.95780420,0.91088236,107346.81963221,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-08,Electronics | Paid Search,Electronics,Paid Search,36441.79167411,0.93948680,85376.13841340,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-08,Grocery | Affiliate,Grocery,Affiliate,66650.60152219,0.98013976,90575.76675274,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-08,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,54938.07692616,1.02474702,164468.97663000,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-08,Grocery | Paid Search,Grocery,Paid Search,86382.01941628,1.06442699,156671.26414903,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-08,Home | Affiliate,Home,Affiliate,67297.95646070,1.09127918,213955.17140882,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-08,Home | Lifecycle CRM,Home,Lifecycle CRM,122833.13276257,1.09995716,148016.61630752,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-08,Home | Paid Search,Home,Paid Search,150682.54370628,1.08873309,306410.91765130,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-15,Beauty | Affiliate,Beauty,Affiliate,95052.31409027,0.95352768,90719.00290775,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-15,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,62744.89626920,0.91963985,135705.19854911,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-15,Beauty | Paid Search,Beauty,Paid Search,68573.33710547,0.90175219,79615.39864907,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-15,Electronics | Affiliate,Electronics,Affiliate,90461.23334509,0.90342624,166098.24582288,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-15,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,125811.46657912,0.92432868,100371.26001111,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-15,Electronics | Paid Search,Electronics,Paid Search,50401.20682783,0.96029772,101905.63460339,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-15,Grocery | Affiliate,Grocery,Affiliate,104841.24700935,1.00417172,127223.09641892,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-15,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,101136.56710587,1.04721510,216431.50086869,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-15,Grocery | Paid Search,Grocery,Paid Search,47033.92230713,1.08085768,114639.19298756,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-15,Home | Affiliate,Home,Affiliate,52328.40964294,1.09840103,165583.38719005,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-15,Home | Lifecycle CRM,Home,Lifecycle CRM,211194.81822982,1.09635216,164643.81882862,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-15,Home | Paid Search,Home,Paid Search,59450.83711293,1.07511902,177752.29634249,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-22,Beauty | Affiliate,Beauty,Affiliate,59885.88960512,0.93368773,72460.24318679,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-22,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,68126.93360848,0.90773167,120472.80490239,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-22,Beauty | Paid Search,Beauty,Paid Search,115304.66169186,0.90014677,112620.67805535,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-22,Electronics | Affiliate,Electronics,Affiliate,42709.08246302,0.91244323,114877.17249414,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-22,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,132743.83590958,0.94217274,110327.53317370,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-22,Electronics | Paid Search,Electronics,Paid Search,35054.66885319,0.98341600,91347.79929781,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-22,Grocery | Affiliate,Grocery,Affiliate,139938.26032035,1.02796123,151080.83232438,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-22,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,112839.18613973,1.06693921,221481.12748285,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-22,Grocery | Paid Search,Grocery,Paid Search,98747.87939567,1.09258921,164105.51195655,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-22,Home | Affiliate,Home,Affiliate,51850.31842967,1.09980416,180730.83035817,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-22,Home | Lifecycle CRM,Home,Lifecycle CRM,217756.06540342,1.08714753,152327.27316431,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-22,Home | Paid Search,Home,Paid Search,98742.14420561,1.05713931,218001.17657899,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-29,Beauty | Affiliate,Beauty,Affiliate,60410.16954540,0.91770161,71491.35267107,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-29,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,98040.54527142,0.90118580,130333.15965851,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-29,Beauty | Paid Search,Beauty,Paid Search,82540.52727924,0.90434446,95245.43482860,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-29,Electronics | Affiliate,Electronics,Affiliate,41002.12697542,0.92654870,103875.98351556,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-29,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,96395.53480400,0.96337752,109910.79698722,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-29,Electronics | Paid Search,Electronics,Paid Search,60258.55322308,1.00749808,124449.49310351,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-29,Grocery | Affiliate,Grocery,Affiliate,78606.85713254,1.05012573,105470.97647080,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-29,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,59127.71237822,1.08277306,203675.26756789,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-29,Grocery | Paid Search,Grocery,Paid Search,132953.16461257,1.09893980,170013.79913773,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-29,Home | Affiliate,Home,Affiliate,55375.99411364,1.09540704,127497.18397650,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-29,Home | Lifecycle CRM,Home,Lifecycle CRM,66323.85040834,1.07287819,86452.87309116,synthetic_fixture,public-safe-schema-fixture-v1
+2024-04-29,Home | Paid Search,Home,Paid Search,49941.27832116,1.03583887,168408.87026833,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-06,Beauty | Affiliate,Beauty,Affiliate,37818.66142418,0.90649838,62981.04860154,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-06,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,72253.08757009,0.90038264,119727.58383134,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-06,Beauty | Paid Search,Beauty,Paid Search,114170.44096730,0.91410130,116336.64655867,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-06,Electronics | Affiliate,Electronics,Affiliate,60694.10808221,0.94492289,158853.89666606,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-06,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,94294.84080939,0.98671065,111806.53518302,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-06,Electronics | Paid Search,Electronics,Paid Search,51276.56797344,1.03114440,107037.55401225,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-06,Grocery | Affiliate,Grocery,Affiliate,108004.37814508,1.06937711,130558.02594421,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-06,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,53407.28208203,1.09379644,173544.22463040,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-06,Grocery | Paid Search,Grocery,Paid Search,73195.32177186,1.09954036,143167.72852655,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-06,Home | Affiliate,Home,Affiliate,103618.71955943,1.08546521,226490.99135707,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-06,Home | Lifecycle CRM,Home,Lifecycle CRM,61833.74768265,1.05437345,91687.43787711,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-06,Home | Paid Search,Home,Paid Search,147045.56930746,1.01245561,251777.16536239,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-13,Beauty | Affiliate,Beauty,Affiliate,54193.73774817,0.90072911,70177.96695876,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-13,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,94835.49056764,0.90536889,131561.55417315,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-13,Beauty | Paid Search,Beauty,Paid Search,80628.08927045,0.92885026,84839.05068381,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-13,Electronics | Affiliate,Electronics,Affiliate,36608.09312973,0.96649797,105409.39267543,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-13,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,91367.15103745,1.01081612,94894.18522896,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-13,Electronics | Paid Search,Electronics,Paid Search,72583.65700829,1.05298072,149335.96423720,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-13,Grocery | Affiliate,Grocery,Affiliate,58333.37133982,1.08459655,103557.93324352,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-13,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,69545.25028228,1.09936872,207130.87434985,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-13,Grocery | Paid Search,Grocery,Paid Search,154270.04288992,1.09435600,178445.64600595,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-13,Home | Affiliate,Home,Affiliate,92938.32714059,1.07055645,214722.04484543,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-13,Home | Lifecycle CRM,Home,Lifecycle CRM,82977.53661340,1.03270871,123349.42255783,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-13,Home | Paid Search,Home,Paid Search,69441.71432599,0.98834847,198074.01683830,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-20,Beauty | Affiliate,Beauty,Affiliate,133332.08330302,0.90072911,98297.52378350,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-20,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,97226.58326398,0.91585475,128247.75440635,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-20,Beauty | Paid Search,Beauty,Paid Search,97989.39136297,0.94773419,95765.19963111,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-20,Electronics | Affiliate,Electronics,Affiliate,58072.04572395,0.99002006,141306.13758662,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-20,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,137817.20145704,1.03429299,125997.83343530,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-20,Electronics | Paid Search,Electronics,Paid Search,111610.19990756,1.07173799,184477.36991495,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-20,Grocery | Affiliate,Grocery,Affiliate,101651.24977818,1.09489954,127057.54433391,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-20,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,113149.18438107,1.09916604,238718.13777587,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-20,Grocery | Paid Search,Grocery,Paid Search,52856.01698272,1.08368801,123231.83623888,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-20,Home | Affiliate,Home,Affiliate,57400.27148973,1.05154721,161696.09392667,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-20,Home | Lifecycle CRM,Home,Lifecycle CRM,100910.78684590,1.00914306,109294.02141318,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-20,Home | Paid Search,Home,Paid Search,75402.03474991,0.96491848,188504.91381754,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-27,Beauty | Affiliate,Beauty,Affiliate,128078.67531596,1.02434316,110676.50200039,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-27,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,58352.15721106,1.05229083,131130.12526267,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-27,Beauty | Paid Search,Beauty,Paid Search,64387.57984182,1.09571084,98120.95877906,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-27,Electronics | Affiliate,Electronics,Affiliate,70373.11291328,1.14595803,181588.59841655,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-27,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,83926.60004857,1.19302787,110643.53227654,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-27,Electronics | Paid Search,Electronics,Paid Search,120477.13585642,1.22754850,208939.13552128,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-27,Grocery | Affiliate,Grocery,Affiliate,49719.40995875,1.24264666,117667.30284982,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-27,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,92087.86479399,1.23531622,255447.12213914,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-27,Grocery | Paid Search,Grocery,Paid Search,44212.67574898,1.20701671,98057.78212316,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-27,Home | Affiliate,Home,Affiliate,32048.02007835,1.16338272,117790.15657331,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-27,Home | Lifecycle CRM,Home,Lifecycle CRM,180517.25095090,1.11310204,174989.61034241,synthetic_fixture,public-safe-schema-fixture-v1
+2024-05-27,Home | Paid Search,Home,Paid Search,47652.33916993,1.06618584,151427.54966852,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-03,Beauty | Affiliate,Beauty,Affiliate,115072.86947487,1.03700282,97247.72772722,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-03,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,96851.60089865,1.07418197,169238.94513256,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-03,Beauty | Paid Search,Beauty,Paid Search,86490.38091142,1.12247481,128597.60650904,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-03,Electronics | Affiliate,Electronics,Affiliate,59533.39824155,1.17226596,179698.57472552,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-03,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,88089.47010561,1.21364171,104469.53997359,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-03,Electronics | Paid Search,Electronics,Paid Search,94698.59306646,1.23836392,200190.38606573,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-03,Grocery | Affiliate,Grocery,Affiliate,147012.89529213,1.24151023,205375.62436548,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-03,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,40401.28653971,1.22245422,181926.31838750,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-03,Grocery | Paid Search,Grocery,Paid Search,43315.00471769,1.18499003,109927.61006966,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-03,Home | Affiliate,Home,Affiliate,75084.04349788,1.13657701,150089.35716883,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-03,Home | Lifecycle CRM,Home,Lifecycle CRM,102038.57400191,1.08685447,120013.83521478,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-03,Home | Paid Search,Home,Paid Search,46905.62948954,1.04572245,132497.10551151,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-10,Beauty | Affiliate,Beauty,Affiliate,92252.01378472,0.93368773,91556.87660751,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-10,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,84687.77247496,0.97284695,141182.26638651,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-10,Beauty | Paid Search,Beauty,Paid Search,117080.53281135,1.01741250,115583.81221783,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-10,Electronics | Affiliate,Electronics,Affiliate,57941.70133811,1.05851111,156401.28407588,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-10,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,135961.35265577,1.08795983,117143.15867571,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-10,Electronics | Paid Search,Electronics,Paid Search,92868.70618042,1.09989523,155602.73342930,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-10,Grocery | Affiliate,Grocery,Affiliate,40986.50755214,1.09194092,84434.65767394,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-10,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,88118.27856781,1.06568063,214782.37479171,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-10,Grocery | Paid Search,Grocery,Paid Search,115014.80016611,1.02634295,167784.91612371,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-10,Home | Affiliate,Home,Affiliate,77583.57787253,0.98176024,151851.56110328,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-10,Home | Lifecycle CRM,Home,Lifecycle CRM,51520.88631442,0.94080917,68085.77451112,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-10,Home | Paid Search,Home,Paid Search,69420.07881103,0.91164333,178418.55972586,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-17,Beauty | Affiliate,Beauty,Affiliate,125165.62650677,0.95352768,115290.89693465,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-17,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,76896.44624919,0.99666842,143119.34696583,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-17,Beauty | Paid Search,Beauty,Paid Search,67210.89490810,1.04047250,104933.52932740,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-17,Electronics | Affiliate,Electronics,Affiliate,58413.00519138,1.07621826,159070.56378323,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-17,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,125246.11655243,1.09678853,128363.21583833,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-17,Electronics | Paid Search,Electronics,Paid Search,101459.57795758,1.09808764,190793.14858894,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-17,Grocery | Affiliate,Grocery,Affiliate,83618.93262560,1.07985694,120327.87831956,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-17,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,104495.71844018,1.04572625,239693.24660635,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-17,Grocery | Paid Search,Grocery,Paid Search,57320.95952781,1.00249120,115855.49924697,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-17,Home | Affiliate,Home,Affiliate,100138.55606115,0.95876014,181115.09274418,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-17,Home | Lifecycle CRM,Home,Lifecycle CRM,193562.50502503,0.92324018,117202.33718927,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-17,Home | Paid Search,Home,Paid Search,133906.58376013,0.90300354,209735.07421535,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-24,Beauty | Affiliate,Beauty,Affiliate,95273.38062451,0.97606843,88348.74804814,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-24,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,47994.56682305,1.02068351,113361.83281801,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-24,Beauty | Paid Search,Beauty,Paid Search,114603.05499951,1.06118039,127736.71111566,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-24,Electronics | Affiliate,Electronics,Affiliate,74337.34311050,1.08949589,203921.67097928,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-24,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,140665.39507506,1.09999224,113717.73425925,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-24,Electronics | Paid Search,Electronics,Paid Search,116240.42559377,1.09057956,188865.28648672,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-24,Grocery | Affiliate,Grocery,Affiliate,47647.42718902,1.06313196,89473.03749056,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-24,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,35364.10753887,1.02311443,125954.10783260,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-24,Grocery | Paid Search,Grocery,Paid Search,77156.15756948,0.97849467,131605.57400125,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-24,Home | Affiliate,Home,Affiliate,85510.21095749,0.93815676,175329.98489392,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-24,Home | Lifecycle CRM,Home,Lifecycle CRM,177158.85761923,0.91013219,130337.02206468,synthetic_fixture,public-safe-schema-fixture-v1
+2024-06-24,Home | Paid Search,Home,Paid Search,63327.17792114,0.90000082,165216.36995322,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-01,Beauty | Affiliate,Beauty,Affiliate,72566.40435163,1.00000000,92510.34662195,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-01,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,38028.76867948,1.04349655,96647.95846089,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-01,Beauty | Paid Search,Beauty,Paid Search,47985.66315427,1.07833269,85443.01286795,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-01,Electronics | Affiliate,Electronics,Affiliate,33365.05361690,1.09757234,122903.95037142,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-01,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,103347.52690255,1.09738476,112123.98650587,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-01,Electronics | Paid Search,Electronics,Paid Search,39801.74180209,1.07780732,114270.46876950,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-01,Grocery | Affiliate,Grocery,Affiliate,132171.95243898,1.04273799,131576.48507461,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-01,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,103859.66093132,0.99915928,219931.13658095,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-01,Grocery | Paid Search,Grocery,Paid Search,47669.66047750,0.95574796,99434.29627946,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-01,Home | Affiliate,Home,Affiliate,96223.81980041,0.92114747,159322.20084674,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-01,Home | Lifecycle CRM,Home,Lifecycle CRM,90887.59498231,0.90224699,101598.40011858,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-01,Home | Paid Search,Home,Paid Search,76220.80776142,0.90280969,151888.60952280,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-08,Beauty | Affiliate,Beauty,Affiliate,47892.92723746,1.02393157,79308.53743043,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-08,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,38120.40611910,1.06378173,99975.11563219,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-08,Beauty | Paid Search,Beauty,Paid Search,41963.45514835,1.09093259,82025.76751531,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-08,Electronics | Affiliate,Electronics,Affiliate,28595.27221459,1.09997823,115108.00827030,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-08,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,115377.72392832,1.08911764,129632.39007144,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-08,Electronics | Paid Search,Electronics,Paid Search,32001.11452584,1.06051320,76262.15944256,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-08,Grocery | Affiliate,Grocery,Affiliate,89264.19749995,1.01986024,103335.15284732,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-08,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,100616.73424386,0.97525298,219745.65996089,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-08,Grocery | Paid Search,Grocery,Paid Search,112809.34650526,0.93557301,139835.61569164,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-08,Home | Affiliate,Home,Affiliate,87345.76492732,0.90872082,164968.91239713,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-08,Home | Lifecycle CRM,Home,Lifecycle CRM,88781.61899609,0.90004284,97715.34251885,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-08,Home | Paid Search,Home,Paid Search,114139.36806736,0.91126691,199608.31629000,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-15,Beauty | Affiliate,Beauty,Affiliate,69489.61752581,1.04647232,95681.23216655,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-15,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,80607.63971644,1.08036015,162769.33032887,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-15,Beauty | Paid Search,Beauty,Paid Search,60031.47606792,1.09824781,92882.05017800,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-15,Electronics | Affiliate,Electronics,Affiliate,80362.32725744,1.09657376,166338.57967118,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-15,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,84691.14766424,1.07567132,102106.52507413,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-15,Electronics | Paid Search,Electronics,Paid Search,107505.61040149,1.03970228,156317.28601416,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-15,Grocery | Affiliate,Grocery,Affiliate,72974.18345375,0.99582828,97899.89804152,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-15,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,31682.72747971,0.95278490,117999.56369865,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-15,Grocery | Paid Search,Grocery,Paid Search,104606.96775189,0.91914232,122688.97892980,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-15,Home | Affiliate,Home,Affiliate,68301.73769812,0.90159897,143420.86625592,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-15,Home | Lifecycle CRM,Home,Lifecycle CRM,58400.03096351,0.90364784,67713.07271325,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-15,Home | Paid Search,Home,Paid Search,106081.27319449,0.92488098,216853.17909235,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-22,Beauty | Affiliate,Beauty,Affiliate,88644.30003556,1.06631227,97768.42754529,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-22,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,54962.07471464,1.09226833,116803.04062918,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-22,Beauty | Paid Search,Beauty,Paid Search,114404.62862315,1.09985323,127296.79722826,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-22,Electronics | Affiliate,Electronics,Affiliate,80895.46682048,1.08755677,194208.09533843,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-22,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,69243.16715962,1.05782726,91735.54755742,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-22,Electronics | Paid Search,Electronics,Paid Search,80158.50598558,1.01658400,142844.50416112,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-22,Grocery | Affiliate,Grocery,Affiliate,79817.19730321,0.97203877,109168.22442552,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-22,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,61726.19218780,0.93306079,155422.60125036,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-22,Grocery | Paid Search,Grocery,Paid Search,64286.81319692,0.90741079,108504.63230088,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-22,Home | Affiliate,Home,Affiliate,37583.29159498,0.90019584,100844.57537874,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-22,Home | Lifecycle CRM,Home,Lifecycle CRM,149734.43191436,0.91285247,119791.20896947,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-22,Home | Paid Search,Home,Paid Search,131203.41287620,0.94286069,251374.29123699,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-29,Beauty | Affiliate,Beauty,Affiliate,91901.89317935,1.08229839,101958.56464206,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-29,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,66170.31636359,1.09881420,139333.79755479,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-29,Beauty | Paid Search,Beauty,Paid Search,50322.27887163,1.09565554,82822.30801265,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-29,Electronics | Affiliate,Electronics,Affiliate,51373.79796512,1.07345130,131194.55454656,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-29,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,83295.01440598,1.03662248,95038.09675849,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-29,Electronics | Paid Search,Electronics,Paid Search,84552.99808005,0.99250192,145349.19349157,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-29,Grocery | Affiliate,Grocery,Affiliate,45017.74974841,0.94987427,74018.32299960,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-29,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,82212.79275134,0.91722694,170915.91333499,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-29,Grocery | Paid Search,Grocery,Paid Search,137200.21690731,0.90106020,137824.27801456,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-29,Home | Affiliate,Home,Affiliate,43297.56927545,0.90459296,112821.73992027,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-29,Home | Lifecycle CRM,Home,Lifecycle CRM,65490.39799504,0.92712181,88247.81303979,synthetic_fixture,public-safe-schema-fixture-v1
+2024-07-29,Home | Paid Search,Home,Paid Search,118894.58461538,0.96416113,249212.33788540,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-05,Beauty | Affiliate,Beauty,Affiliate,45187.73415232,1.09350162,72165.03438832,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-05,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,85144.72849901,1.09961736,175076.51381608,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-05,Beauty | Paid Search,Beauty,Paid Search,116104.61326037,1.08589870,130969.24490134,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-05,Electronics | Affiliate,Electronics,Affiliate,75332.92440078,1.05507711,165571.33113885,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-05,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,83961.65602543,1.01328935,84096.12142828,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-05,Electronics | Paid Search,Electronics,Paid Search,106005.36670424,0.96885560,177182.78575825,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-05,Grocery | Affiliate,Grocery,Affiliate,137643.76542326,0.93062289,118361.73087184,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-05,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,100804.78656390,0.90620356,187635.52782385,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-05,Grocery | Paid Search,Grocery,Paid Search,102554.53532669,0.90045964,125576.36264499,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-05,Home | Affiliate,Home,Affiliate,31594.74726874,0.91453479,97851.00326563,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-05,Home | Lifecycle CRM,Home,Lifecycle CRM,84698.12750615,0.94562655,97439.13014638,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-05,Home | Paid Search,Home,Paid Search,67814.06934525,0.98754439,205864.09489198,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-12,Beauty | Affiliate,Beauty,Affiliate,52821.68602209,1.09927089,84153.38263275,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-12,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,62457.21949632,1.09463111,143830.73239791,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-12,Beauty | Paid Search,Beauty,Paid Search,98384.49597688,1.07114974,132092.43831462,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-12,Electronics | Affiliate,Electronics,Affiliate,38669.81075788,1.03350203,146817.86512059,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-12,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,97177.70414189,0.98918388,103341.68212054,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-12,Electronics | Paid Search,Electronics,Paid Search,54488.27131660,0.94701928,113197.39342644,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-12,Grocery | Affiliate,Grocery,Affiliate,103586.31803291,0.91540345,103026.62855582,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-12,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,85777.16850671,0.90063128,173095.10640996,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-12,Grocery | Paid Search,Grocery,Paid Search,36240.84032720,0.90564400,74244.29075487,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-12,Home | Affiliate,Home,Affiliate,84915.67471133,0.92944355,161394.78166249,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-12,Home | Lifecycle CRM,Home,Lifecycle CRM,142964.67075281,0.96729129,133706.11717567,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-12,Home | Paid Search,Home,Paid Search,102735.80094249,1.01165153,227053.00863388,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-19,Beauty | Affiliate,Beauty,Affiliate,39226.34733261,1.09927089,79067.15670590,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-19,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,33241.20922193,1.08414525,103684.96108399,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-19,Beauty | Paid Search,Beauty,Paid Search,98866.31079968,1.05226581,116351.79948445,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-19,Electronics | Affiliate,Electronics,Affiliate,23574.54493875,1.00997994,85064.63787853,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-19,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,128472.63740674,0.96570701,114236.25919546,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-19,Electronics | Paid Search,Electronics,Paid Search,28360.40855973,0.92826201,67446.94470739,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-19,Grocery | Affiliate,Grocery,Affiliate,94536.94126568,0.90510046,107537.04407625,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-19,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,82673.28681431,0.90083396,179111.34331617,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-19,Grocery | Paid Search,Grocery,Paid Search,41175.41911168,0.91631199,82174.57057298,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-19,Home | Affiliate,Home,Affiliate,23187.12529530,0.94845279,75210.06380305,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-19,Home | Lifecycle CRM,Home,Lifecycle CRM,51521.14307036,0.99085694,91786.85704697,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-19,Home | Paid Search,Home,Paid Search,68749.06433040,1.03508152,211869.04250406,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-26,Beauty | Affiliate,Beauty,Affiliate,49569.98139107,1.23565684,88048.69384003,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-26,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,47442.48416970,1.20770917,135218.69680936,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-26,Beauty | Paid Search,Beauty,Paid Search,107076.25091667,1.16428916,138883.84409646,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-26,Electronics | Affiliate,Electronics,Affiliate,46665.18217139,1.11404197,148385.65802941,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-26,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,62519.47443712,1.06697213,96102.98118750,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-26,Electronics | Paid Search,Electronics,Paid Search,82026.05182622,1.03245150,156806.58140430,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-26,Grocery | Affiliate,Grocery,Affiliate,95573.02218184,1.01735334,117952.31563256,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-26,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,97246.84361360,1.02468378,211289.95122429,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-26,Grocery | Paid Search,Grocery,Paid Search,104662.87783959,1.05298329,140253.71734326,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-26,Home | Affiliate,Home,Affiliate,31014.10262101,1.09661728,99406.99318895,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-26,Home | Lifecycle CRM,Home,Lifecycle CRM,171401.60811980,1.14689796,150217.29775624,synthetic_fixture,public-safe-schema-fixture-v1
+2024-08-26,Home | Paid Search,Home,Paid Search,84807.45020837,1.19381416,255495.38432858,synthetic_fixture,public-safe-schema-fixture-v1
+2024-09-02,Beauty | Affiliate,Beauty,Affiliate,56890.06244138,1.22299718,85263.51441625,synthetic_fixture,public-safe-schema-fixture-v1
+2024-09-02,Beauty | Lifecycle CRM,Beauty,Lifecycle CRM,72643.29550111,1.18581803,148557.65980884,synthetic_fixture,public-safe-schema-fixture-v1
+2024-09-02,Beauty | Paid Search,Beauty,Paid Search,64584.87845422,1.13752519,107356.10258650,synthetic_fixture,public-safe-schema-fixture-v1
+2024-09-02,Electronics | Affiliate,Electronics,Affiliate,63511.58274670,1.08773404,153410.40758760,synthetic_fixture,public-safe-schema-fixture-v1
+2024-09-02,Electronics | Lifecycle CRM,Electronics,Lifecycle CRM,85552.47883236,1.04635829,96251.38643356,synthetic_fixture,public-safe-schema-fixture-v1
+2024-09-02,Electronics | Paid Search,Electronics,Paid Search,93944.05754791,1.02163608,161453.99616375,synthetic_fixture,public-safe-schema-fixture-v1
+2024-09-02,Grocery | Affiliate,Grocery,Affiliate,90910.58746691,1.01848977,126618.85584685,synthetic_fixture,public-safe-schema-fixture-v1
+2024-09-02,Grocery | Lifecycle CRM,Grocery,Lifecycle CRM,57288.67344518,1.03754578,165996.47929555,synthetic_fixture,public-safe-schema-fixture-v1
+2024-09-02,Grocery | Paid Search,Grocery,Paid Search,113394.53093147,1.07500997,167031.84137832,synthetic_fixture,public-safe-schema-fixture-v1
+2024-09-02,Home | Affiliate,Home,Affiliate,60350.13894432,1.12342299,163266.06112112,synthetic_fixture,public-safe-schema-fixture-v1
+2024-09-02,Home | Lifecycle CRM,Home,Lifecycle CRM,142531.42725326,1.17314553,183361.57925154,synthetic_fixture,public-safe-schema-fixture-v1
+2024-09-02,Home | Paid Search,Home,Paid Search,120806.79578173,1.21427755,283568.63622487,synthetic_fixture,public-safe-schema-fixture-v1

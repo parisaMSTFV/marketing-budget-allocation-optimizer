@@ -38,6 +38,37 @@ def evaluate_allocation(
     }
 
 
+def evaluate_modeled_allocation(
+    allocation: pd.DataFrame,
+    models: dict[str, ResponseCurveModel],
+    scenario: ScenarioPlan,
+    historical_allocation: pd.DataFrame,
+) -> dict[str, float]:
+    """Score an input-data policy with fitted curves, without claiming realized truth."""
+
+    modeled_values = []
+    for _, row in allocation.iterrows():
+        model = models[str(row["cell_id"])]
+        context = scenario.category_context.get(str(row["category"]), 1.0)
+        modeled_values.append(
+            float(model.predict(float(row["allocated_spend"])) * context)
+        )
+
+    spend = float(allocation["allocated_spend"].sum())
+    contribution = float(np.sum(modeled_values))
+    historical = historical_allocation.set_index("cell_id")["allocated_spend"]
+    aligned = allocation.set_index("cell_id")["allocated_spend"].reindex(historical.index)
+    turnover = 0.5 * float(np.abs(aligned - historical).sum()) / spend
+    return {
+        "budget": spend,
+        "modeled_incremental_contribution": contribution,
+        "modeled_incremental_profit": contribution - spend,
+        "modeled_incremental_contribution_roi": contribution / spend,
+        "modeled_incremental_profit_roi": (contribution - spend) / spend,
+        "allocation_turnover": turnover,
+    }
+
+
 def add_oracle_regret(comparison: pd.DataFrame) -> pd.DataFrame:
     """Add scenario-level regret relative to a perfect-information allocation."""
 
@@ -55,4 +86,3 @@ def add_oracle_regret(comparison: pd.DataFrame) -> pd.DataFrame:
         axis=1,
     )
     return result
-

@@ -2,15 +2,40 @@
 
 [![CI](https://github.com/parisaMSTFV/marketing-budget-allocation-optimizer/actions/workflows/ci.yml/badge.svg)](https://github.com/parisaMSTFV/marketing-budget-allocation-optimizer/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12-3776AB)](https://www.python.org/)
-[![Data](https://img.shields.io/badge/data-100%25%20synthetic-0F766E)](DATA_PROVENANCE.md)
+[![Demo data](https://img.shields.io/badge/demo%20data-100%25%20synthetic-0F766E)](DATA_PROVENANCE.md)
+[![Input](https://img.shields.io/badge/input-weekly%20response%20contract-264653)](docs/weekly_response_contract.md)
 
-A reproducible decision-science case study for allocating a limited marketing
-budget across category-channel cells. The pipeline estimates diminishing-return
-curves, validates them on a later untouched period, and solves a constrained
-portfolio allocation for Base, Growth, and Conservative planning scenarios.
+Allocate a limited marketing budget across category-channel cells without ignoring
+diminishing returns, operating bounds, or portfolio constraints. The pipeline accepts
+experiment-informed weekly response evidence, validates curves on a later period, and
+solves Base, Growth, and Conservative plans.
 
-> All categories, channels, dates, spend, constraints, response parameters, and
-> results are synthetic. No employer data, schema, code, or internal threshold is used.
+> The committed results and input fixture are synthetic. No employer data,
+> schema, code, or internal threshold is used. A validated aggregate input path
+> is available for experiment-informed weekly evidence; supplied data is never
+> treated as simulation truth.
+
+## Decision snapshot
+
+| Committed benchmark | Result |
+|---|---:|
+| Profit vs feasible historical mix | **+10.2%** |
+| Regret vs simulation oracle | **0.3%** |
+| Material constraint violations | **0** |
+
+![Base allocation comparison](reports/figures/allocation_heatmap.png)
+
+## Run with weekly response evidence
+
+```bash
+python -m pip install -e ".[dev]"
+marketing-allocation \
+  --input-weekly-response path/to/weekly_response.csv \
+  --budget 1200000 \
+  --project-root path/to/output
+```
+
+Supplied-input reports use modeled metrics and omit simulation-only Oracle and regret claims. The loader requires traceable experiment or causal-estimate provenance and stops without a fallback recommendation when no allocation satisfies every constraint. See the [input contract](docs/weekly_response_contract.md).
 
 ## Business question
 
@@ -95,8 +120,6 @@ The default plan uses:
 These are fictional case-study assumptions. They are exposed in code and should
 be replaced with approved business rules in a real planning process.
 
-![Base allocation comparison](reports/figures/allocation_heatmap.png)
-
 ## Scenario planning
 
 - **Base:** neutral category context and the original budget.
@@ -109,9 +132,9 @@ be replaced with approved business rules in a real planning process.
 ## Repository structure
 
 ```text
-src/marketing_allocation/  simulation, curves, optimization, evaluation, reporting
+src/marketing_allocation/  input validation, simulation, curves, optimization, reporting
 tests/                     leakage, constraints, reproducibility, and pipeline tests
-docs/                      analysis plan, metrics, model card, interview guide
+docs/                      input contract, analysis plan, metrics, model card, interview guide
 reports/                   reproducible tables, figures, run summary, decision note
 scripts/                   public-file sensitive-content check
 .github/workflows/         CI on Python 3.11 and 3.12
@@ -132,6 +155,37 @@ make run
 make check
 ```
 
+### Run with experiment-informed weekly data
+
+Prepare a balanced aggregate CSV that follows the
+[weekly response contract](docs/weekly_response_contract.md), then supply an
+explicit planning budget:
+
+```bash
+marketing-allocation \
+  --input-weekly-response path/to/weekly_response.csv \
+  --budget 1200000 \
+  --project-root path/to/output
+```
+
+The loader requires traceable `evidence_type` and `evidence_reference` fields,
+rejects platform attribution as incremental evidence, and checks dates, numeric
+values, cell mappings, panel completeness, and temporal history. The committed
+fixture can exercise the same path without using real data:
+
+```bash
+marketing-allocation \
+  --input-weekly-response data/sample/weekly_response_fixture.csv \
+  --budget 1200000 \
+  --test-weeks 6 \
+  --validation-weeks 5 \
+  --project-root /tmp/marketing-allocation-input-smoke
+```
+
+Input-mode reports use `modeled_*` metrics and never create an Oracle policy or
+regret claim. If no allocation satisfies all constraints, the command stops and
+writes no recommendation fallback.
+
 On Windows PowerShell:
 
 ```powershell
@@ -145,6 +199,7 @@ On Windows PowerShell:
 - [Model card](docs/model_card.md)
 - [Interview guide](docs/interview_guide.md)
 - [Data provenance](DATA_PROVENANCE.md)
+- [Weekly response input contract](docs/weekly_response_contract.md)
 - [Reproducible run summary](reports/run_summary.md)
 - [Decision note](reports/decision_note.md)
 - [Recommended allocation](reports/recommended_allocation.csv)
@@ -152,6 +207,7 @@ On Windows PowerShell:
 ## Limitations
 
 - The response outcome is synthetic and assumes experiment-quality incremental evidence.
+- Supplied-input policy values are fitted-model estimates, not realized impact.
 - One curve is fitted independently per cell; production use may need hierarchical pooling.
 - Scenario multipliers are planning assumptions, not forecasts.
 - The optimizer does not model creative fatigue, inventory, audience overlap, or execution delays.
