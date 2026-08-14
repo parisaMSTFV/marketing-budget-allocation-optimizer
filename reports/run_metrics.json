@@ -57,6 +57,7 @@
     "test_weeks": 20,
     "validation_weeks": 16
   },
+  "data_mode": "synthetic_simulation",
   "decision_cells": 12,
   "history_weeks": 68,
   "mean_holdout_wape": 0.05860146633461749,

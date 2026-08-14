@@ -8,8 +8,12 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import linprog
 
-from marketing_allocation.config import CATEGORIES, CHANNELS, AllocationRules
+from marketing_allocation.config import CATEGORIES, AllocationRules
 from marketing_allocation.curves import ResponseCurveModel
+
+
+class InfeasibleAllocationError(ValueError):
+    """Raised when no allocation can satisfy every configured constraint."""
 
 
 @dataclass(frozen=True)
@@ -88,7 +92,7 @@ def _allocation_constraints(
 ) -> tuple[list[np.ndarray], list[float]]:
     rows: list[np.ndarray] = []
     limits: list[float] = []
-    for category in CATEGORIES:
+    for category in sorted(cells["category"].unique()):
         mask = (cells["category"] == category).to_numpy(dtype=float)
         rows.extend([mask, -mask])
         limits.extend(
@@ -97,7 +101,7 @@ def _allocation_constraints(
                 -rules.minimum_category_share * budget,
             ]
         )
-    for channel in CHANNELS:
+    for channel in sorted(cells["channel"].unique()):
         mask = (cells["channel"] == channel).to_numpy(dtype=float)
         rows.extend([mask, -mask])
         limits.extend(
@@ -121,13 +125,13 @@ def allocation_diagnostics(
     violations: list[float] = [abs(spend - budget)]
 
     category_spend = allocation.groupby("category")["allocated_spend"].sum()
-    for category in CATEGORIES:
+    for category in sorted(allocation["category"].unique()):
         value = float(category_spend.get(category, 0.0))
         violations.append(max(rules.minimum_category_share * budget - value, 0.0))
         violations.append(max(value - rules.maximum_category_share * budget, 0.0))
 
     channel_spend = allocation.groupby("channel")["allocated_spend"].sum()
-    for channel in CHANNELS:
+    for channel in sorted(allocation["channel"].unique()):
         value = float(channel_spend.get(channel, 0.0))
         violations.append(max(rules.minimum_channel_share * budget - value, 0.0))
         violations.append(max(value - rules.maximum_channel_share * budget, 0.0))
@@ -155,6 +159,41 @@ def allocation_diagnostics(
     }
 
 
+def ensure_feasible_constraints(
+    cells: pd.DataFrame,
+    scenario: ScenarioPlan,
+    rules: AllocationRules,
+) -> None:
+    """Fail before optimization when the constraint system has no feasible point."""
+
+    if scenario.budget <= 0:
+        raise InfeasibleAllocationError("Scenario budget must be positive")
+    if cells.empty:
+        raise InfeasibleAllocationError("No decision cells are available")
+    lower = cells["minimum_spend"].to_numpy(dtype=float)
+    upper = cells["maximum_spend"].to_numpy(dtype=float)
+    if not np.isfinite(lower).all() or not np.isfinite(upper).all():
+        raise InfeasibleAllocationError("Cell bounds must be finite")
+    if np.any(lower < 0) or np.any(upper < lower):
+        raise InfeasibleAllocationError("Cell bounds are invalid")
+
+    base_rows, base_limits = _allocation_constraints(cells, scenario.budget, rules)
+    result = linprog(
+        np.zeros(len(cells)),
+        A_ub=np.asarray(base_rows),
+        b_ub=np.asarray(base_limits),
+        A_eq=np.ones((1, len(cells))),
+        b_eq=np.asarray([scenario.budget]),
+        bounds=list(zip(lower, upper, strict=True)),
+        method="highs",
+    )
+    if not result.success:
+        raise InfeasibleAllocationError(
+            "No allocation satisfies the budget, share, and cell bounds: "
+            f"{result.message}"
+        )
+
+
 def project_target_allocation(
     cells: pd.DataFrame,
     target_spend: np.ndarray,
@@ -165,6 +204,11 @@ def project_target_allocation(
 
     n_cells = len(cells)
     target = np.asarray(target_spend, dtype=float)
+    ensure_feasible_constraints(cells, scenario, rules)
+    if target.shape != (n_cells,) or not np.isfinite(target).all():
+        raise ValueError("target_spend must contain one finite value per decision cell")
+    if target.sum() <= 0:
+        raise ValueError("target_spend must have a positive total")
     target = target / target.sum() * scenario.budget
 
     # Variables are allocation, positive deviation, and negative deviation.
@@ -199,7 +243,7 @@ def project_target_allocation(
         method="highs",
     )
     if not result.success:
-        raise RuntimeError(f"Target projection failed: {result.message}")
+        raise InfeasibleAllocationError(f"Target projection failed: {result.message}")
 
     allocation = cells.copy()
     allocation["allocated_spend"] = result.x[:n_cells]
@@ -223,6 +267,46 @@ def _risk_adjusted_value(
     return model.predict(spend) * context * penalty
 
 
+def _allocation_result(
+    models: dict[str, ResponseCurveModel],
+    cells: pd.DataFrame,
+    scenario: ScenarioPlan,
+    rules: AllocationRules,
+    allocation_values: np.ndarray,
+    solver_status: str,
+) -> AllocationResult:
+    """Create one audited allocation result from feasible spend values."""
+
+    allocation = cells.copy()
+    allocation["allocated_spend"] = allocation_values
+    allocation["allocation_share"] = allocation["allocated_spend"] / scenario.budget
+    predicted_values = []
+    for _, row in allocation.iterrows():
+        model = models[str(row["cell_id"])]
+        predicted_values.append(
+            float(
+                _risk_adjusted_value(
+                    model,
+                    np.asarray([row["allocated_spend"]]),
+                    context=scenario.category_context.get(str(row["category"]), 1.0),
+                    risk_aversion=scenario.risk_aversion,
+                )[0]
+            )
+        )
+    allocation["predicted_incremental_contribution"] = predicted_values
+    allocation["predicted_incremental_profit"] = (
+        allocation["predicted_incremental_contribution"]
+        - allocation["allocated_spend"]
+    )
+    diagnostics = allocation_diagnostics(allocation, scenario.budget, rules)
+    return AllocationResult(
+        allocation=allocation,
+        objective_value=float(allocation["predicted_incremental_contribution"].sum()),
+        solver_status=solver_status,
+        diagnostics=diagnostics,
+    )
+
+
 def optimize_budget(
     models: dict[str, ResponseCurveModel],
     cells: pd.DataFrame,
@@ -234,9 +318,17 @@ def optimize_budget(
     segment_count = rules.piecewise_segments
     lower = cells["minimum_spend"].to_numpy(dtype=float)
     upper = cells["maximum_spend"].to_numpy(dtype=float)
+    ensure_feasible_constraints(cells, scenario, rules)
     remaining_budget = scenario.budget - float(lower.sum())
-    if remaining_budget < -0.01 or scenario.budget > float(upper.sum()) + 0.01:
-        raise ValueError("Scenario budget is infeasible under cell bounds")
+    if remaining_budget <= max(scenario.budget * 1e-10, 1e-6):
+        return _allocation_result(
+            models,
+            cells,
+            scenario,
+            rules,
+            lower,
+            "Feasible at cell minimums; no discretionary budget",
+        )
 
     segment_widths: list[float] = []
     slopes: list[float] = []
@@ -244,7 +336,7 @@ def optimize_budget(
     for cell_index, row in cells.iterrows():
         model = models[str(row["cell_id"])]
         grid = np.linspace(lower[cell_index], upper[cell_index], segment_count + 1)
-        context = scenario.category_context[str(row["category"])]
+        context = scenario.category_context.get(str(row["category"]), 1.0)
         values = _risk_adjusted_value(
             model,
             grid,
@@ -269,7 +361,7 @@ def optimize_budget(
     def segment_mask(cell_mask: np.ndarray) -> np.ndarray:
         return np.asarray([cell_mask[cell_index] for cell_index in segment_cells], dtype=float)
 
-    for category in CATEGORIES:
+    for category in sorted(cells["category"].unique()):
         cell_mask = (cells["category"] == category).to_numpy(dtype=float)
         row = segment_mask(cell_mask)
         lower_total = float(lower[cell_mask.astype(bool)].sum())
@@ -280,7 +372,7 @@ def optimize_budget(
                 lower_total - rules.minimum_category_share * scenario.budget,
             ]
         )
-    for channel in CHANNELS:
+    for channel in sorted(cells["channel"].unique()):
         cell_mask = (cells["channel"] == channel).to_numpy(dtype=float)
         row = segment_mask(cell_mask)
         lower_total = float(lower[cell_mask.astype(bool)].sum())
@@ -302,38 +394,18 @@ def optimize_budget(
         method="highs",
     )
     if not result.success:
-        raise RuntimeError(f"Budget optimization failed: {result.message}")
+        raise InfeasibleAllocationError(f"Budget optimization failed: {result.message}")
 
     allocation_values = lower.copy()
     for value, cell_index in zip(result.x, segment_cells, strict=True):
         allocation_values[cell_index] += value
-
-    allocation = cells.copy()
-    allocation["allocated_spend"] = allocation_values
-    allocation["allocation_share"] = allocation["allocated_spend"] / scenario.budget
-    predicted_values = []
-    for _, row in allocation.iterrows():
-        model = models[str(row["cell_id"])]
-        predicted_values.append(
-            float(
-                _risk_adjusted_value(
-                    model,
-                    np.asarray([row["allocated_spend"]]),
-                    context=scenario.category_context[str(row["category"])],
-                    risk_aversion=scenario.risk_aversion,
-                )[0]
-            )
-        )
-    allocation["predicted_incremental_contribution"] = predicted_values
-    allocation["predicted_incremental_profit"] = (
-        allocation["predicted_incremental_contribution"] - allocation["allocated_spend"]
-    )
-    diagnostics = allocation_diagnostics(allocation, scenario.budget, rules)
-    return AllocationResult(
-        allocation=allocation,
-        objective_value=float(allocation["predicted_incremental_contribution"].sum()),
-        solver_status=str(result.message),
-        diagnostics=diagnostics,
+    return _allocation_result(
+        models,
+        cells,
+        scenario,
+        rules,
+        allocation_values,
+        str(result.message),
     )
 
 
