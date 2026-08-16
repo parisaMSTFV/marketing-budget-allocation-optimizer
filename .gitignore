@@ -5,7 +5,7 @@ __pycache__/
 .pytest_cache/
 build/
 dist/
+local-runs/
 *.egg-info/
 data/generated/*
 !data/generated/.gitkeep
-

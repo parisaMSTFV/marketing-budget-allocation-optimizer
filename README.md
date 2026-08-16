@@ -155,6 +155,9 @@ make run
 make check
 ```
 
+`make run` writes generated data and reports under the ignored `local-runs/latest`
+directory, leaving the committed benchmark evidence unchanged.
+
 ### Run with experiment-informed weekly data
 
 Prepare a balanced aggregate CSV that follows the
