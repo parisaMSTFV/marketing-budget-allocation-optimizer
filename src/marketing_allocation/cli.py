@@ -17,8 +17,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--project-root",
         type=Path,
-        default=Path.cwd(),
-        help="Repository root for generated reports.",
+        default=Path("local-runs/latest"),
+        help="Output root; defaults to an ignored local-run directory.",
     )
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--weeks", type=int, default=104)

@@ -16,7 +16,7 @@ TEXT_SUFFIXES = {
     ".yml",
     ".yaml",
 }
-EXCLUDED_PARTS = {".git", ".venv", "__pycache__", "generated"}
+EXCLUDED_PARTS = {".git", ".venv", "__pycache__", "generated", "local-runs"}
 EXCLUDED_FILES = {Path(__file__).resolve()}
 
 SENSITIVE_PATTERNS = {
