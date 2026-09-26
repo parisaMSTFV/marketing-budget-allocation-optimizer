@@ -333,10 +333,12 @@ def optimize_budget(
     segment_widths: list[float] = []
     slopes: list[float] = []
     segment_cells: list[int] = []
-    for cell_index, row in cells.iterrows():
-        model = models[str(row["cell_id"])]
-        grid = np.linspace(lower[cell_index], upper[cell_index], segment_count + 1)
-        context = scenario.category_context.get(str(row["category"]), 1.0)
+    for cell_position, row in enumerate(cells.itertuples(index=False)):
+        model = models[str(row.cell_id)]
+        grid = np.linspace(
+            lower[cell_position], upper[cell_position], segment_count + 1
+        )
+        context = scenario.category_context.get(str(row.category), 1.0)
         values = _risk_adjusted_value(
             model,
             grid,
@@ -346,11 +348,11 @@ def optimize_budget(
         widths = np.diff(grid)
         cell_slopes = np.diff(values) / widths
         if np.any(cell_slopes < -1e-8):
-            raise ValueError(f"Non-monotonic response for {row['cell_id']}")
+            raise ValueError(f"Non-monotonic response for {row.cell_id}")
         for width, slope in zip(widths, cell_slopes, strict=True):
             segment_widths.append(float(width))
             slopes.append(float(slope))
-            segment_cells.append(int(cell_index))
+            segment_cells.append(cell_position)
 
     n_variables = len(segment_widths)
     equality = np.ones((1, n_variables))

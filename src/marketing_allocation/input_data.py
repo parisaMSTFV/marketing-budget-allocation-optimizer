@@ -67,6 +67,8 @@ def validate_weekly_response(
         clean[column] = clean[column].astype("string").str.strip()
         if clean[column].isna().any() or clean[column].eq("").any():
             raise ValueError(f"{column} must contain non-empty values")
+        if clean[column].str.startswith(("=", "+", "-", "@")).any():
+            raise ValueError(f"{column} contains a spreadsheet-formula prefix")
 
     for column in NUMERIC_COLUMNS:
         clean[column] = pd.to_numeric(clean[column], errors="coerce")
@@ -98,7 +100,7 @@ def validate_weekly_response(
     if len(weeks) < 2:
         raise ValueError("Weekly response data must contain multiple weeks")
     gaps = pd.Series(weeks[1:] - weeks[:-1])
-    if not gaps.eq(pd.Timedelta(days=7)).all():
+    if not gaps.eq(pd.to_timedelta(7, unit="D")).all():
         raise ValueError("week_start values must form a contiguous seven-day calendar")
 
     cell_count = clean["cell_id"].nunique()
