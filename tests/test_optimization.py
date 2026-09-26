@@ -36,6 +36,18 @@ class OptimizationTests(unittest.TestCase):
         self.assertEqual(result.diagnostics["constraint_violations"], 0)
         self.assertAlmostEqual(result.diagnostics["budget_utilization"], 1.0, places=7)
 
+    def test_optimizer_uses_row_positions_with_non_default_index(self) -> None:
+        scenario = default_scenarios(self.rules)[0]
+        cells = self.cells.copy()
+        cells.index = np.arange(100, 100 + len(cells))
+
+        result = optimize_budget(self.models, cells, scenario, self.rules)
+
+        self.assertAlmostEqual(
+            result.allocation["allocated_spend"].sum(), scenario.budget, places=4
+        )
+        self.assertEqual(result.diagnostics["constraint_violations"], 0)
+
     def test_optimizer_beats_feasible_historical_mix_on_its_objective(self) -> None:
         scenario = default_scenarios(self.rules)[0]
         optimized = optimize_budget(self.models, self.cells, scenario, self.rules)

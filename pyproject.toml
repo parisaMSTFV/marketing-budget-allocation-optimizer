@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Constrained category-channel budget allocation with diminishing-return curves"
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = "MIT"
 authors = [{ name = "Parisa Mostafavi" }]
 dependencies = [
   "matplotlib>=3.8",
@@ -34,4 +34,3 @@ target-version = "py311"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
-

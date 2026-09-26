@@ -34,6 +34,13 @@ class InputDataTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "missing columns"):
             validate_weekly_response(broken, validation_weeks=5, test_weeks=6)
 
+    def test_spreadsheet_formula_prefix_is_rejected(self) -> None:
+        broken = experiment_input()
+        broken.loc[broken.index[0], "evidence_reference"] = "=HYPERLINK(\"bad\")"
+
+        with self.assertRaisesRegex(ValueError, "spreadsheet-formula prefix"):
+            validate_weekly_response(broken, validation_weeks=5, test_weeks=6)
+
     def test_incomplete_weekly_panel_is_rejected(self) -> None:
         broken = experiment_input().iloc[1:].copy()
 

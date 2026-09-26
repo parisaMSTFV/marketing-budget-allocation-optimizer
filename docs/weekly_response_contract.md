@@ -50,7 +50,8 @@ outside this repository.
 
 The loader rejects missing columns, duplicate cell-weeks, unstable cell mappings,
 gaps in the weekly calendar, incomplete panels, invalid numeric values, unsupported
-evidence types, and insufficient temporal history.
+evidence types, text fields beginning with spreadsheet formula characters
+(`=`, `+`, `-`, or `@`), and insufficient temporal history.
 
 For supplied data, the pipeline reports fitted-model planning estimates and omits
 the simulation oracle and regret metrics. The recommendation still requires human
